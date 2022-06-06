@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fox music recording studio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .p1 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .header1 {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            background-color: #55BEFF;
+        }
+
+        .header2 {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            background-color: #FF9966;
+        }
+
+        .content1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+
+        .button {
+            background-color: #001B30;
+            border: none;
+            color: white;
+            padding: auto auto;
+            text-align: left;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 17px;
+            margin: 5px 4px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: #001B30;
+            color: white;
+        }
+
+        .button1:hover {
+            background-color: #1a5b84;
+            color: white;
+        }
+
+        .button2 {
+            background-color: #0388e1;
+            color: #ffffff;
+            border: 2px solid #0aace2;
+        }
+
+        .button2:hover {
+            color: #fed521;
+            box-shadow: 0 8px 16px 0 rgba(183, 183, 183, 0.24), 0 6px 50px 0 #f2f20767;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <div id="maincontainer">
+        <div class="col">
+            <!-- Header row -->
+            <div class="row-3">
+                <div class="Header" style="background-color: #55BEFF;height: auto;width: auto;">
+                    <div class="container-fluid mt-3">
+                        <div class="row p-3 header1 text-black text-left">
+                            <div class="col-sm-4">
+                                <h1 class="header1"><img src="/images/foxlogo.jpg" alt="FoxLogo"
+                                        style="width:200px;height:200px;float:left;">
+                                </h1>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown">
+                                        Language
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item">English</a></li>
+                                        <li><a class="dropdown-item">French (Français)</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4">
+                                <br><br>
+                                <h1 class="header1"> <strong>Fox</strong> </h1>
+                                <h2 class="header1">Music Recording Studio</h1>
+                            </div>
+                            <div class="col-sm-3">
+                                <br><br>
+                                <div class="row header2"> Phone: XXX-XXX-XXXX</div>
+                                <div class="row header2"> Email: XXXXXXX@FoxStudio.com</div>
+                                <div class="row header2"> Address: XXXXXXXXXX </div>
+                            </div>
+                            <div class="col-sm-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content row -->
+            <div class="row">
+                <div class="container-fluid">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs justify-content-center bg-dark navbar-dark" role="tablist"
+                        style="border: #000000;">
+                        <li class="nav-item">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                href="#home">Home</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="service-tab" data-bs-toggle="tab" href="#services">Service and
+                                Price</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="mentor-tab" data-bs-toggle="tab"
+                                href="#mentors">Mentors</button>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content container-fluid" style="background-color: #001B30;">
+                        <!-- Home Tab -->
+                        <div id="home" class="container tab-pane active"><br>
+                            <div id="content" style="background-color: #001B30;">
+                                <div class="container-fluid">
+                                    <div class="row p-3 content1 text-white text-left">
+                                        <!-- left image col -->
+                                        <div class="col-2"><img src="/images/mic.png" alt="micpic"
+                                                style="width:330px;height:450px;">
+                                        </div>
+                                        <div class="col-sm-2"><br></div>
+                                        <!-- middle Content col -->
+                                        <div class="col-5">
+                                            <br><br>
+                                            <p style="font-size: 20px; width: 80%;"><strong>Fox Music Recording
+                                                    Studio</strong>
+                                            </p>
+                                            <p style="font-size: 15px; width: 80%;">Proudly Serving Ottawa And
+                                                Surrounding Areas For Over 10 Years !</p>
+                                            <p style="font-size: 15px; width: 80%;">Friendly Professional And
+                                                Affordable.</p>
+                                            <p style="font-size: 15px; width: 80%;">High
+                                                Quality|Recording|Mixing|Mastering|And More!</p>
+                                            <p style="font-size: 15px; width: 80%;">Inspiring And Modern Environment
+                                                With The Gear, Ears, And Expertise To Deliver Every Time.</p>
+                                            <b style="font-size: 15px; width: 80%; color: rgb(217, 163, 75);">
+                                                Book A Free Consultation To Discuss Your Project Today.</b>
+                                            <br>
+                                            <br>
+                                            <div class="row">
+                                                <p style="text-align: center; width:80%;">
+                                                    <button type="button" data-bs-toggle="modal"
+                                                        data-bs-target="#bookPage" class="button button2"
+                                                        style="width: 180px;height:40px;text-align: center;"><span>Book
+                                                            Online
+                                                            Now</span></button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- right businesshour table col -->
+                                        <div class="col-3">
+                                            <br><br>
+                                            <div id="businesshours"
+                                                style="width:fit-content;height:fit-content;background-color: #33CCFF;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center"><strong>BUSINESS</strong></th>
+                                                            <th class="text-center"><strong>HOURS</strong></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center">MONDAY:</td>
+                                                            <td class="text-center"> 9:00 -- 17:00 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">TUESDAY</td>
+                                                            <td class="text-center"> 9:00 -- 17:00 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">WEDNESDAY</td>
+                                                            <td class="text-center"> 9:00 -- 17:00 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">THURSDAY</td>
+                                                            <td class="text-center"> 9:00 -- 17:00 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">FRIDAY</td>
+                                                            <td class="text-center"> 9:00 -- 17:00 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">SATURDAY</td>
+                                                            <td class="text-center">CLOSED</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">SUNDAY</td>
+                                                            <td class="text-center">CLOSED</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Services Tab -->
+                        <div id="services" class="container tab-pane fade"><br>
+                            <div id="content" style="background-color: #001B30;">
+                                <div class="container-fluid">
+                                    <div class="row p-3 content1 text-white text-left">
+                                        <!-- left image col -->
+                                        <div class="col-2"><img src="/images/guitarpic1.jpeg" alt="micpic"
+                                                style="width:350px;height:480px;float:left;">
+                                        </div>
+                                        <div class="col-sm-2"><br></div>
+                                        <!-- middle Content col -->
+                                        <div class="col-4">
+                                            <br><br>
+                                            <p style="font-size: 20px; width: 70%;">We provide recording studio room
+                                                rental services, which include but are not limited to:
+                                            </p>
+                                            <i style="font-size: 17px; color: rgb(217, 163, 75);">Click the text below
+                                                to get
+                                                detailed
+                                                information!</i>
+                                            <div class="row" style="width: 400px;height: 30px;"><button type="button"
+                                                    class="button button1" data-bs-toggle="modal"
+                                                    data-bs-target="#rentalModal"><span>
+                                                        • Studio Rental
+                                                    </span></button></div>
+                                            <div class="row" style="width: 400px;height: 30px;"><button type="button"
+                                                    class="button button1" data-bs-toggle="modal"
+                                                    data-bs-target="#recordingModal"><span>
+                                                        • Vocal & Instrumental Recording
+                                                    </span></button></div>
+                                            <div class="row" style="width: 400px;height: 30px;"><button type="button"
+                                                    class="button button1" data-bs-toggle="modal"
+                                                    data-bs-target="#mixModal"><span>•
+                                                        Mixing & Mastering</span></button></div>
+                                            <div class="row" style="width: 400px;height: 30px;"><button type="button"
+                                                    class="button button1" data-bs-toggle="modal"
+                                                    data-bs-target="#instrumentModal"><span>•
+                                                        Access to all Gears and Instruments</span></button></div>
+                                            <div class="row" style="width: 400px;height: 30px;"><button type="button"
+                                                    class="button button1" data-bs-toggle="modal"
+                                                    data-bs-target="#mentorModal"><span>•
+                                                        Professional Music Recording Mentor Help</span></button></div>
+                                            <br><br>
+                                            <div class="row">
+                                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <button type="button" data-bs-toggle="modal"
+                                                        data-bs-target="#bookPage" class="button button2"
+                                                        style="width: 180px;height:40px;text-align: center;"><span>Book
+                                                            Online
+                                                            Now</span></button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- right Price table col -->
+                                        <div class="col">
+                                            <br><br>
+                                            <div id="businesshours"
+                                                style="width:fit-content;height:fit-content;background-color: #dadc96;">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center"><strong>SERVICES</strong></th>
+                                                            <th class="text-center"><strong>PRICES</strong></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center">Basic price:</td>
+                                                            <td class="text-center"> $50 per hour </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">Half Block:</td>
+                                                            <td class="text-center"> $180 (4 hours) </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">Daily Block:</td>
+                                                            <td class="text-center"> $320 (8 hours) </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center">Week Block:</td>
+                                                            <td class="text-center">$1500 (40 hours)</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="text-center text-black">All services included an Professional
+                                                    Recording Connection Mentor </p>
+                                                <p class="text-center text-black">You may need to require the specific
+                                                    instruments</p>
+                                                <p class="text-center text-black"><b>(No extra fee)</b> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mentors Tab -->
+                        <div id="mentors" class="container tab-pane fade"><br>
+                            <div class="container-fluid text-white text-center">
+                                <h3>Mentors</h3>
+                                <p>We have a total of 4 professional musicians to provide you with expertise during
+                                    recording process at no additional charge!</p>
+                                <br>
+                                <div class="col">
+                                    <!-- Mentor 1 -->
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="/images/Joseph.jpeg" alt="JosephProfie"
+                                                style="width:350px;height:480px;float:left;">
+                                        </div>
+                                        <div class="col-4">
+                                            <br><br><br>
+                                            <h4 class="p1" style="color: #FFE587;"><strong>Joseph</strong></h4>
+                                            <h5 class="p1" style="color: #FFE587;"><strong>Our Music Producer and Mixing
+                                                    Engineer</strong></h5>
+                                            <br>
+                                            <p class="p1" style="font-size: 18px; text-align: left;color: #FFE587;">
+                                                Joseph is our music producer and mixing engineer with extensive
+                                                experience producing <strong>EDM, R&B and Pop</strong> music. He has
+                                                released a
+                                                number of records in a music company
+                                            </p>
+                                            <br>
+                                            <p class="p1" style="font-size: 18px; text-align: center;color: #ddb420;">
+                                                Hit: Choose him if you have a foundation in music and want to improve
+                                                your production</p>
+                                        </div>
+                                        <div class="col-4"></div>
+                                    </div><br>
+                                    <!-- Mentor 2 -->
+                                    <div class="row">
+                                        <div class="col-4"></div>
+                                        <div class="col-4">
+                                            <br><br><br>
+                                            <h4 class="p1" style="color: #0feef6;"><strong>Louise</strong></h4>
+                                            <h5 class="p1" style="color: #0feef6;"><strong>Our Music Producer and
+                                                    Mastering
+                                                    Engineer</strong></h5>
+                                            <br>
+                                            <p class="p1" style="font-size: 18px; text-align: left;color: #0feef6;">
+                                                Louise is our music producer and mastering engineer. she is also a
+                                                multi-instrumentalist, published songwriter and performer. Producing
+                                                <strong>Country, Pop, and K-Pop</strong> music is one of her specialties
+                                            </p>
+                                            <br>
+                                            <p class="p1" style="font-size: 18px; text-align: center;color: #7adee0;">
+                                                Hit: Choose her if you are a music beginner who trying to make your own
+                                                songs and mastering them</p>
+                                        </div>
+                                        <div class="col-4"><img src="/images/Louise.jpg" alt="LouiseProfie"
+                                                style="width:350px;height:480px;float:right;"></div>
+                                    </div><br>
+                                    <!-- Mentor 3 -->
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="/images/Andy.jpeg" alt="AndyProfie"
+                                                style="width:350px;height:480px;float:left;">
+                                        </div>
+                                        <div class="col-4">
+                                            <br><br><br>
+                                            <h4 class="p1" style="color: #f24946;"><strong>Kae</strong></h4>
+                                            <h5 class="p1" style="color: #f24946;"><strong>Our Music Producer and Audio
+                                                    Engineer</strong></h5>
+                                            <br>
+                                            <p class="p1" style="font-size: 18px; text-align: left;color: #f24946;">
+                                                Kae is our music producer, audio engineer with experience in
+                                                <strong>Hip-hop, Rap</strong>
+                                                music. He is also a professional rapper.
+                                            </p>
+                                            <br>
+                                            <p class="p1" style="font-size: 18px; text-align: center;color: #ff9898;">
+                                                Hit: Choose him if If you need help with rap or you're not sure what
+                                                kind of mentor you need</p>
+                                        </div>
+                                        <div class="col-4"></div>
+                                    </div><br>
+                                    <!-- Mentor 4 -->
+                                    <div class="row">
+                                        <div class="col-4"></div>
+                                        <div class="col-4">
+                                            <br><br><br>
+                                            <h4 class="p1" style="color: #48ff00;"><strong>Andy</strong></h4>
+                                            <h5 class="p1" style="color: #48ff00;"><strong>Our Music Producer and Mixing
+                                                    Engineer</strong></h5>
+                                            <br>
+                                            <p class="p1" style="font-size: 18px; text-align: left;color: #48ff00;">
+                                                A music producer and mixing engineer with <strong>Rock</strong> and <strong>Metal</strong> experience,
+                                                Andy has crafted songs for various artists. He used to be a guitarist in
+                                                a band.
+                                            </p>
+                                            <br>
+                                            <p class="p1" style="font-size: 18px; text-align: center;color: rgb(137, 244, 151);">
+                                                Hit: Choose him if choose him if you are in a band or any other type of group</p>
+
+                                        </div>
+                                        <div class="col-4"><img src="/images/Kae.jpg" alt="KaeProfie"
+                                                style="width:350px;height:480px;float:right;"></div>
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal -->
+                    <div class="modal fade" id="rentalModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- modal header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Studio Rental</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- modal content -->
+                                <div class="modal-body"
+                                    style="background-color: #EEEEEE;height: fit-content;width: fit-content;">
+                                    <img src="/images/studiopic4.jpg" alt="studioimage1" width="466" height="300">
+                                    <br><br>
+                                    <p class="content1">Our recording studio has professional recording equipment and
+                                        mixing
+                                        equipment. And the
+                                        studio has a good sound insulation environment to avoid you being disturbed by
+                                        noise.
+                                    </p>
+                                </div>
+
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="recordingModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- modal header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Vocal & Instrumental Recording</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- modal content -->
+                                <div class="modal-body"
+                                    style="background-color: #EEEEEE;height: fit-content;width: fit-content;">
+                                    <img src="/images/studiopic3.jpeg" alt="studioimage3" width="466" height="300">
+                                    <br><br>
+                                    <p class="content1">The recording equipments will be controled by our professional
+                                        sound
+                                        engineer to ensure
+                                        that your beautiful voice and instrument performance are perfectly recorded in
+                                        the
+                                        production.
+                                    </p>
+                                </div>
+
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="mixModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- modal header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Mixing & Mastering</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- modal content -->
+                                <div class="modal-body"
+                                    style="background-color: #EEEEEE;height: fit-content;width: fit-content;">
+                                    <img src="/images/studiopic2.jpeg" alt="studioimage2" width="466" height="300">
+                                    <br><br>
+                                    <p class="content1">Our studios are equipped with professional mixing and mastering
+                                        equipment to ensure that all work is done at the highest quality possible</p>
+                                </div>
+
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="instrumentModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- modal header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Access to all Gears and Instruments</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- modal content -->
+                                <div class="modal-body"
+                                    style="background-color: #EEEEEE;height: fit-content;width: fit-content;">
+                                    <img src="/images/instrument.jpg" alt="instruments-and-gears" width="466"
+                                        height="300">
+                                    <br><br>
+                                    <p class="content1">Whether you're a solo singer or a band, we've got you covered,
+                                        with all
+                                        the instruments and equipment available in the studio.
+                                    </p>
+                                    <b class="content1"> No extra charge is all included in the Room rental fee!</b>
+                                </div>
+
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="mentorModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- modal header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Professional Music Recording Mentor Help</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- modal content -->
+                                <div class="modal-body"
+                                    style="background-color: #EEEEEE;height: fit-content;width: fit-content;">
+                                    <img src="/images/mentorpic1.jpeg" alt="instruments-and-gears" width="466"
+                                        height="300">
+                                    <br><br>
+                                    <p class="content1">Our professional music mentors will be at your service, giving
+                                        you
+                                        dedicated guidance if you need it.
+                                    </p>
+                                    <b class="content1"> No extra charge is all included in the Room rental fee!</b>
+                                </div>
+
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="bookPage">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+
+                                <!-- modal header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Book an appointment</h4>
+                                    <button type="button" class="btn-close " data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- modal content -->
+                                <div class="modal-body">
+                                    <div class="col-4">
+                                        <h6 style="font-size: medium; text-align: left;"><strong>CUSTOMER
+                                                INFORMATION</strong></h6>
+                                        <div class="row" style="width: 388px;height: fit-content;">
+                                            <div class="form-floating mb-3 mt-3">
+                                                <input type="text" class="form-control" id="fullname"
+                                                    placeholder="Enter Full Name" name="fullname">
+                                                <label for="fullname">&nbsp;&nbsp;Full Name</label>
+                                            </div>
+                                            <div class="form-floating mb-3 mt-3">
+                                                <input type="text" class="form-control" id="email"
+                                                    placeholder="Enter email" name="email">
+                                                <label for="email">&nbsp;&nbsp;Email</label>
+                                            </div>
+                                            <div class="form-floating mb-3 mt-3">
+                                                <select class="form-select" id="servicelist" name="servicelist">
+                                                    <option>Room Rental </option>
+                                                    <option>Room Rental with specific instrument requirements (same
+                                                        price)
+                                                    </option>
+                                                </select>
+                                                <label for="servicelist" class="form-label">Select the Service (select
+                                                    one)</label>
+                                            </div>
+                                            <div class="form-floating mb-3 mt-3">
+                                                <select class="form-select" id="hourlist" name="hourlist">
+                                                    <option>1 hr</option>
+                                                    <option>2 hours</option>
+                                                    <option>3 hours</option>
+                                                    <option>Half Block(4 hours)</option>
+                                                    <option>5 hours</option>
+                                                    <option>6 hours</option>
+                                                    <option>7 hours</option>
+                                                    <option>Daily Block(8 hours)</option>
+                                                    <option>Week Block(40 hours)</option>
+                                                </select>
+                                                <label for="hourlist" class="form-label">Select Total Hours to Rent
+                                                    (select
+                                                    one):</label>
+                                            </div>
+                                            <div class="form-floating mb-3 mt-3">
+                                                <select class="form-select" id="mentorlist" name="mentorlist">
+                                                    <option>Joseph</option>
+                                                    <option>Louise</option>
+                                                    <option>Kae</option>
+                                                    <option>Andy</option>
+                                                </select>
+                                                <label for="mentorlist" class="form-label">Select the Mentor (select
+                                                    one):</label>
+                                            </div>
+                                            <div class="form-floating mb-3 mt-3">
+                                                <input type="text" class="form-control" id="schedule"
+                                                    placeholder="Enter Date" name="schedule">
+                                                <label for="schedule">&nbsp;&nbsp;MM/DD/YYYY</label>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="popover"
+                                                    title="Date Availability"
+                                                    data-bs-content="Your chosen mentor is available that day">
+                                                    Verify that the date is available
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#confirmationmodal">Confirm</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="confirmationmodal">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+
+                                <!-- modal header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order Confirmation</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- modal content -->
+                                <div class="modal-body"
+                                    style="background-color: #EEEEEE;height: fit-content;width: fit-content;">
+                                    <img src="/images/studiopic1.jpeg" alt="studiopic1" width="466" height="300">
+                                    <b class="content1">Confirm your order information</b><br>
+                                    <p>Full name: customer full name</p>
+                                    <p>Email: customer email</p>
+                                    <p>Service: service name</p>
+                                    <p>Total hours: number of hours </p>
+                                    <p>Mentor: Mentor name</p>
+                                    <p>Date: MM/DD/YYYY</p>
+                                    <p>Total Price: number of price</p>
+                                    <b class="header1" style="background-color: #EEEEEE"> Thank you for choosing us!</b>
+                                </div>
+
+                                <!-- modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#bookPage">Edit
+                                        details</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pop over -->
+                    <script>
+                        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                            return new bootstrap.Popover(popoverTriggerEl)
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</body>
+
+</html>
